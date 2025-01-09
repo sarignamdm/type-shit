@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day 4U</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day, Guntas!</h1>
+        <div class="slideshow">
+            <img id="slideshow-image" src="images/image1.jpg" alt="Memory 1">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="questionnaire">
+            <h2>Question for You!</h2>
+            <p id="question">What’s my favorite dessert?</p>
+            <input type="text" id="answer" placeholder="Your answer here...">
+            <button onclick="submitAnswer()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
